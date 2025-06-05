@@ -1,4 +1,4 @@
-# LowPin_MCU
+# MCU 32bit less then 20 pins
 Небольшой обзор 32bit MCU с малым количеством выводов ( < 20 pins )
 Альтернативы STM32 и сравнение
 
