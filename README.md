@@ -83,7 +83,7 @@ HC32L110 - 32MHz, Flash 16K/32K; RAM 2K/4K; csp16,tssop16 (1.8-5.5V)
 
 ### CH32V003 
 
-Интересные новые ядра RISK-V
+Интересные новые ядра RISC-V
 
 ```
 CH32V003 - 48MHz, Flash 16K, RAM 2K;  so8,so16  (2.7-5.5V)
