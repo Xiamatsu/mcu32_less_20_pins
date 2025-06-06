@@ -68,7 +68,7 @@ sop8:14:16  qfn16  dfn8(1.5x1.5)
 
 HK32F030M - 32MHz; Flash  16K/32K; RAM 2K/4K; EEPROM 0.4K; so8; tssop16  (1.8-3.6V)
 
-HK32F0301M - тоже самое, только 48MHz
+HK32F0301M - тоже самое, только 48MHz<br>
 HK32F0301MxxxC - (2.4-5.5V) 
 
 
