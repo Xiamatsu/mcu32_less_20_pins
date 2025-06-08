@@ -53,10 +53,14 @@ sop8:16  qfn16 essop10  msop10  dfn8(3x2)  dfn8(1.5x1.5)
 ```
 24-48MHz; Flash 24K; RAM 3K; (1.7-5.5V)
   PY32F002B  max 24MHz; Flash 24K; RAM 3K; noDMA; noBootloader; noPLL?
+
+  HSI - 24MHz  LSI - 32,768KHz
+  LSE - (только в корпусах so-14, so-16)
+  HSE_ClkIn - 4-32MHz 
   (standby 1,5uA)
 ```
 Корпуса 
-sop8:14:16  qfn16  dfn8(1.5x1.5)
+sop8:14:16  qfn16  
 
 
 ### HK32F030xx
@@ -77,8 +81,17 @@ HK32F0301MxxxC - (2.4-5.5V)
 Есть только одна серия которая имеет tssop16,csp16 
 ```
 HC32L110 - 32MHz, Flash 16K/32K; RAM 2K/4K; csp16,tssop16 (1.8-5.5V)
-  noPLL, noDMA
+  RTC,UART-2,LPUART,SPI,I2C, GPTim-3, PCATim-1, AdvTim-3, WDT, Buzz
+  ADC12-6ch, COMP-2, LVD, noDMA, noPLL
+  HSI - (4/8/16/22.12/24MHz) LSI - (32.8/38.4KHz)
+  HSE,LSE - даже в этих корпусах и разные подключения и может быть одновременно
+  частота до 32МHz только от внешнего кварца, так как нет PLL
   (standby 0,6uA)
+
+  Есть документация на английском языке.
+  Регистры переферии собственная нотация.
+  Таймеры 0,1,2 могут быть 32 бит в режиме простого счёта.
+
 ```
 
 ### CH32V003 
