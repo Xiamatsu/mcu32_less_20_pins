@@ -70,7 +70,12 @@ sop8:14:16  qfn16
 - разводка выводов как у stm8 stm32
 - есть версии до 5V ( только бывает неудачная маркировка - в конце буква )
 
+```
 HK32F030M - 32MHz; Flash  16K/32K; RAM 2K/4K; EEPROM 0.4K; so8; tssop16  (1.8-3.6V)
+            USART,I2C,SPI/I2S,ADC12,IOMUX(so8),IWDG+WWDG,GPTim-1,AdwTim-1,BasTim-1,AWU
+            HSI - 32MHz, LSI - 114kHz
+            EXTclk up to 32MHz
+```            
 
 HK32F0301M - тоже самое, только 48MHz<br>
 HK32F0301MxxxC - (2.4-5.5V) 
@@ -83,7 +88,7 @@ HK32F0301MxxxC - (2.4-5.5V)
 HC32L110 - 32MHz, Flash 16K/32K; RAM 2K/4K; csp16,tssop16 (1.8-5.5V)
   RTC,UART-2,LPUART,SPI,I2C, GPTim-3, PCATim-1, AdvTim-3, WDT, Buzz
   ADC12-6ch, COMP-2, LVD, noDMA, noPLL
-  HSI - (4/8/16/22.12/24MHz) LSI - (32.8/38.4KHz)
+  HSI - (4/8/16/22.12/24MHz) LSI - (32.8/38.4kHz)
   HSE,LSE - даже в этих корпусах и разные подключения и может быть одновременно
   частота до 32МHz только от внешнего кварца, так как нет PLL
   (standby 0,6uA)
