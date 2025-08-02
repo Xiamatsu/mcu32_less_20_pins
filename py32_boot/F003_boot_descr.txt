@@ -1,0 +1,17 @@
+
+1fff00d4	Reset
+	call	1fff08a8
+		# VTOR = 08000000
+	call	1fff00c0    (Init2)	
+		goto	1fff00f0	(Init3)
+		call	1fff0bb0	(r0=1ffff2f1, r1=20000000, r2=00000200) 
+			# Clear RAM 20000000-200001FF
+		call	1fff00c2	(Init4)
+			call	1fff0c70
+				# set calibration constants for 24MHz clock and flash write
+				...
+				...
+				call	1fff0114	{ Init USART } { check GPIOA  [2,3] [9,10] [14,15] }
+				call	1fff029c	{ main in forever loop }	
+					
+				goto	1fff0cee	{ to main }

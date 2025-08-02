@@ -42,9 +42,12 @@ WCH       - CH32    /  RISC-V  ( RV32EC )
   HSI (4M, 8M, 16M, 22.12M, 24M) и есть калибровочные константы для каждой частоты!
   LSI 32768Hz
 ```
-Корпуса 
+Корпуса:<br> 
 sop8  sop16  qfn16  essop10  msop10  dfn8(3x2)  dfn8(1.5x1.5)  
 
+Программатор:<br>
+ST-Link-2, j-Link OD, WCH-LinkE (DAP), SLogic combo 8 (DAP)  - проверено в Keil
+WCH-LinkE (DAP) - проверено с openOCD (PUYA ed)
 
 ##### PY32F002B; PY32L020
 
@@ -57,6 +60,7 @@ sop8  sop16  qfn16  essop10  msop10  dfn8(3x2)  dfn8(1.5x1.5)
   LSE - (только в корпусах so-14, so-16)
   HSE_ClkIn - 4-32MHz 
   (standby 1,5uA)
+  (deepsleep 0,7uA)
 ```
 Корпуса 
 sop8  sop14  sop16  qfn16  
@@ -96,6 +100,7 @@ HC32L110 - 32MHz, Flash 16K/32K; RAM 2K/4K; csp16,tssop16 (1.8-5.5V)
   Регистры переферии собственная нотация.
   Таймеры 0,1,2 могут быть 32 бит в режиме простого счёта.
 
+  '+' Потребление в режимах LP-Run и LP-Stop - очень низкое (см. ниже таблицу)
 ```
 
 ### CH32V 
@@ -109,6 +114,7 @@ CH32V003 - 48MHz, Flash 16K, RAM 2K;  so8,so16  (2.7-5.5V)
   '-' нет умножения в ISA 
   '-' в корпусах so8 и so16 нет SPI
   '-' ADC 10-bit
+  '-' потребление не маленькое в режимах Stop и Standby
   HSI-24M LSI-128K, есть подключения для кварца HSE(4M-24M) даже в so8
   (standby 9uA)
 ```
@@ -124,3 +130,6 @@ CH32V002 - по сравнению с v003
   '-' убрали OPA/CMP
 ```
 
+### Небольшое исследование DS по вопросу потребления
+
+![Потребление MCU](img\low_power.png)
