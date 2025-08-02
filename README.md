@@ -46,7 +46,7 @@ WCH       - CH32    /  RISC-V  ( RV32EC )
 sop8  sop16  qfn16  essop10  msop10  dfn8(3x2)  dfn8(1.5x1.5)  
 
 Программатор:<br>
-ST-Link-2, j-Link OD, WCH-LinkE (DAP), SLogic combo 8 (DAP)  - проверено в Keil
+ST-Link-2, j-Link OD, WCH-LinkE (DAP), SLogic combo 8 (DAP)  - проверено в Keil<br>
 WCH-LinkE (DAP) - проверено с openOCD (PUYA ed)
 
 ##### PY32F002B; PY32L020
