@@ -49,7 +49,7 @@ sop8  sop16  qfn16  essop10  msop10  dfn8(3x2)  dfn8(1.5x1.5)
 ST-Link-2, j-Link OD, WCH-LinkE (DAP), SLogic combo 8 (DAP)  - проверено в Keil<br>
 WCH-LinkE (DAP) - проверено с openOCD (PUYA ed)
 
-Более подробно [ЗДЕСЬ](../py32f002a_003_030/README.md)
+Более подробно [ЗДЕСЬ](https://github.com/Xiamatsu/py32f002a_003_030)
 
 ##### PY32F002B; PY32L020
 
@@ -67,7 +67,7 @@ WCH-LinkE (DAP) - проверено с openOCD (PUYA ed)
 Корпуса 
 sop8  sop14  sop16  qfn16  
 
-Более подробно [ЗДЕСЬ](../py32f002b/README.md)
+Более подробно [ЗДЕСЬ](https://github.com/Xiamatsu/py32f002b)
 
 ### HK32F030xx
 
