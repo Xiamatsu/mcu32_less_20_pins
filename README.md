@@ -49,6 +49,8 @@ sop8  sop16  qfn16  essop10  msop10  dfn8(3x2)  dfn8(1.5x1.5)
 ST-Link-2, j-Link OD, WCH-LinkE (DAP), SLogic combo 8 (DAP)  - проверено в Keil<br>
 WCH-LinkE (DAP) - проверено с openOCD (PUYA ed)
 
+Более подробно [ЗДЕСЬ](../py32f002a_003_030/README.md)
+
 ##### PY32F002B; PY32L020
 
   похоже что тоже одинаковый кристалл в этих двух сериях
@@ -65,6 +67,7 @@ WCH-LinkE (DAP) - проверено с openOCD (PUYA ed)
 Корпуса 
 sop8  sop14  sop16  qfn16  
 
+Более подробно [ЗДЕСЬ](../py32f002b/README.md)
 
 ### HK32F030xx
 
@@ -92,7 +95,7 @@ HC32L110 - 32MHz, Flash 16K/32K; RAM 2K/4K; csp16,tssop16 (1.8-5.5V)
   RTC,UART-2,LPUART,SPI,I2C, GPTim-3, PCATim-1, AdvTim-3, WDT, Buzz
   ADC12-6ch, COMP-2, LVD, noDMA, noPLL
   HSI - (4/8/16/22.12/24MHz) LSI - (32.8/38.4kHz)
-  HSE,LSE - даже в этих корпусах и разные подключения и может быть одновременно
+  HSE, LSE - даже в этих корпусах и разные подключения и может быть одновременно
   частота до 32МHz только от внешнего кварца, так как нет PLL
   (standby 0,6uA)
 
